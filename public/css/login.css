@@ -1,0 +1,79 @@
+/* 기본 설정 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* 로그인/회원가입 전용 래퍼 */
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 제목 */
+.form-wrapper h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #4a90e2;
+}
+
+/* 로그인/회원가입 폼 */
+form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #357abd;
+}
+
+/* 모바일 대응 */
+@media (max-width: 480px) {
+  .form-wrapper {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}

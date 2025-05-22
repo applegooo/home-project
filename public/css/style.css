@@ -1,0 +1,245 @@
+/* 기본 스타일 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 상단 헤더 */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 본문 영역: 좌우 사이드바 + 컨텐츠 */
+.main-content {
+  flex: 1;
+  display: flex;
+  background-color: white;
+}
+
+/* 좌측 사이드바 */
+.sidebar-left {
+  width: 250px;
+  background-color: #eceff1;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-left ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar-left ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.sidebar-left ul li a:hover {
+  color: #4a90e2;
+}
+
+/* 우측 사이드바 */
+.sidebar-right {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.sidebar-right h3 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar-right ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-right ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* 중앙 컨텐츠 */
+.content {
+  flex: 1;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* 카드 컨테이너 */
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* 카드 */
+.card {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 240px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #357abd;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* 하단 푸터 */
+footer {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* 반응형 모바일 대응 */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    display: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
+.login-card {
+  max-width: 360px;
+  margin: 40px auto;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-msg {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.naver-login-btn {
+  background-color: #357abd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.naver-login-btn:hover {
+  background-color: #357abd;
+}
+
+.login-links {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+.login-links a {
+  color: #888;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.login-links a:hover {
+  color: #4a90e2;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.naver-login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #357abd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.naver-login-btn:hover {
+  background-color: #357abd;
+}
+
+.login-links {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}

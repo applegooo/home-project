@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>민주의 포트폴리오</header>
+
+      <div class="main-content">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar-left">
+          <h2>내 소개</h2>
+          <ul>
+            <li><a href="#">자기소개</a></li>
+            <li><a href="#">학력</a></li>
+            <li><a href="#">기술</a></li>
+            <li><a href="#">취미</a></li>
+            <li><a href="#">연락처</a></li>
+          </ul>
+        </div>
+
+        <!-- 본문 -->
+        <div class="content">
+          <h1>환영합니다!</h1>
+          <p>저는 개발자로 근무하고 있는 김민주입니다.</p>
+
+          <div class="card-container">
+            <div class="card">
+              <h3>공지사항</h3>
+              <ul>
+                <li>벌써 내가 25살..?!</li>
+                <li>자취 라이프 곧 시작합니다.</li>
+                <li>나만 없어 강아지</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>문의하기</h3>
+              <p>문제가 있으신가요? 그럴수도 있죠 </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 우측 사이드바 -->
+          <div class="sidebar-right">
+            <div class="login-card">
+              <p class="login-msg">저랑 함께하시겠습니까?</p>
+
+              <form action="/login" method="post" class="login-form">
+                <label for="user-id">아이디</label><br>
+                <input type="text" id="user-id" name="userId" placeholder="아이디 입력" required><br>
+
+                <label for="user-pw">비밀번호</label><br>
+                <input type="password" id="user-pw" name="password" placeholder="비밀번호 입력" required><br>
+
+                <button type="submit" class="naver-login-btn">로그인</button>
+              </form>
+
+              <div class="login-links">
+                <a href="views/register.html">회원가입</a> |
+                <a href="views/find-id.html">아이디 찾기</a> |
+                <a href="views/find-password.html">비밀번호 찾기</a>
+              </div>
+            </div>
+          </div>
+  </body>
+</html>
